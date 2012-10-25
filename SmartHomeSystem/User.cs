@@ -9,27 +9,27 @@ namespace SmartHomeSystem
     class User
     {
         /*Definitions for attributes*/
-        int userId
+        private int userId
         {
             get { return userId; }
             set { userId = value; }
         }
-        int userType
+        private int userType
         {
             get { return userType; }
             set { userType = value; }
         }
-        string userName
+        private string userName
         {
             get { return userName; }
             set { userName = value; }
         }
-        string userPassword
+        private string userPassword
         {
             get { return userPassword; }
             set { userPassword = value; }
         }
-        string userContact
+        private string userContact
         {
             get { return userContact; }
             set { userContact = value; }
@@ -45,6 +45,25 @@ namespace SmartHomeSystem
             this.userContact = contact;
         }
 
+        public bool addUser()
+        {
+            /*Should pass from WPF to this sub to add a user
+             * hash the password, try catch structure,
+             * return true for success, false for nope.avi */
+            return true;
+        }
+
+        public bool removeUser()
+        {
+            /*Remove the user from database, try catch the statement...
+             * return true for success, false for remove */
+            return true;
+        }
+
+        public bool updateUser()
+        {
+            return true;
+        }
 
     }
 
