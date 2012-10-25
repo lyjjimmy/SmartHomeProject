@@ -8,6 +8,7 @@ namespace SmartHomeSystem
 {
     class User
     {
+        /*Definitions for attributes*/
         int userId
         {
             get { return userId; }
@@ -34,6 +35,7 @@ namespace SmartHomeSystem
             set { userContact = value; }
         }
 
+        /* Constructor for the User Class*/
         public User(int id, int type, string name, string password, string contact)
         {
             this.userId = id;
